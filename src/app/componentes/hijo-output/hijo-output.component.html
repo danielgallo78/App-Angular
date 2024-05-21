@@ -1,0 +1,12 @@
+<div class="container mt-5">
+    <h2>Componente Hijo</h2>
+    <h4>Enviara datos a componente Padre</h4>
+    <input #valores type="text" placeholder="Escribe un Nombre para sumarlo a la lista" class="form-control">
+    <button
+    (click)="enviarData(valores.value)" 
+    class="btn btn-danger mt-2">
+    Enviar Datos
+</button>
+</div>
+
+

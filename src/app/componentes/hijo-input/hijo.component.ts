@@ -1,6 +1,7 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { PadreComponent } from '../padre/padre.component';
+
+
 
 @Component({
   selector: 'app-hijo',
@@ -9,18 +10,13 @@ import { PadreComponent } from '../padre/padre.component';
   templateUrl: './hijo.component.html',
   styleUrl: './hijo.component.css'
 })
-export class HijoComponent implements OnInit{
+export class HijoComponent{
+
+  @Input()
+  
+  data:string ='texto escrito en componente hijo';
 
   
-
-
-constructor(){
-
-}
-
-ngOnInit(): void {
-    
-}
-
+  
 }
 
